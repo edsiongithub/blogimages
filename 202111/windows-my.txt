@@ -1,0 +1,72 @@
+{
+	"count": 1,
+	"serviceLevelAgreementId": null,
+	"businessGroupId": "0ddc63a0-3981-480e-be7d-1c67ac5c0d24",
+	"projectId": "",
+	"description": null,
+	"name": null,
+	"paramJson": " [{ \"Server_resource_config_disk_tags\":[\"存储资源:NAS\"],\"Server_resource_config_volume_config\" :{\"lvm_enable\": false,\"vg_groups\": [],\"disk_groups\": [{\"isCreateInRequest\":true,\"name\":\"数据盘1\",\"size\":102400,\"order\":1,\"isUsedByVG\":false,\"isUsedByLV\":false,\"diskTags\":[\"存储资源:NAS\"],\"isCreateInCatalog\":false,\"isEdit\":false,\"index\":0,\"device\":[]}]},\"Server_server_cpus\":2,\"Server_server_memory\":8192,\"Server_server_snapshotIndex\":\"\",\"Server_server_logic_template_id\":\"5f78c894-c909-4478-8e5a-6a736f541e09\",\"Server_server_physical_template_id\":\"de8c261c-dc12-4303-8da3-50a38a0b0d32\",\"Server_server_resource_spec_id\":\"5fd2d5c2-1634-41a5-9d01-85b236213d4b\",\"Server_server_template_id\":\"\",\"Server_port_Port_ip_allocation_method\":\"\",\"Server_port_Port_ip\":\"\",\"Server_port_Port_pool_ip_address\":\"\",\"Server_port_Port_gateway\":\"\",\"Server_port_Port_cidr\":\"\",\"Server_port_Port_use_ipv6\":false,\"Server_port_Port_ipv6_address\":\"\",\"Server_port_Port_ipv6_gateway\":\"\",\"Server_port_Port_ipv6_cidr\":\"\",\"Network_resource_id\":\"dvportgroup-142\",\"Server.exts\":{},\"Network.exts\":{}}]",
+	"deploymentParamTemplateId": "22b31106-069a-433e-8780-37ef76d528a9",
+	"kind": "PROVISION",
+	"number": 1,
+	"attachments": null,
+	"ownerId": "c8813529-c538-4548-977e-4c8833ed3d8e",
+	"payType": "Subscription",
+	"price": "260",
+	"deploymentShutdownDuration": 2,
+	"deploymentTeardownDuration": 7,
+	"processForm": {
+		"projectid": "41600-544000-00001",
+		"schemaFormValid": false,
+		"unName": "6ce751f8-2928-48c5-a4e9-2827a4de16de",
+		"uniPrjCode": "41600-544000-00001",
+		"userName": "u20180368",
+		"userPassword": "123QWEasd",
+		"confirmPassword": "123QWEasd",
+		"email": "gxwang@admin.ecnu.edu.cn",
+		"userPhone": "13370244628",
+		"NetworkRequest": "校园网私网地址（不限制校园网内访问，无法主动访问公网） - HX-Cluster/Datacenter",
+		"name": "彭伟(19970035)",
+		"userId": "19970035",
+		"projectName": "彭伟科研发展基金",
+		"projectId": "41600-544000-00001"
+	},
+	"scheduleDate": null,
+	"requestParameters": {
+		"cloud_resource_facets": {},
+		"extensibleParametersList": [{
+			"Network": {
+				"exts": {}
+			},
+			"Server": {
+				"exts": {}
+			}
+		}]
+	},
+	"nodes": [
+		[{
+			"name": "数据盘1",
+			"relationships": [{
+				"type": "cloudchef.vsphere.storage_contained_in_server",
+				"target": "Server"
+			}],
+			"type": "cloudchef.vsphere.nodes.Disk",
+			"properties": {
+				"resource_config": {
+					"disk_policy": "tags",
+					"disk_tags": ["存储资源:NAS"]
+				},
+				"storage": {
+					"datastore_id": "",
+					"storage_index": 1,
+					"storage_size": 102400
+				}
+			}
+		}]
+	],
+	"requestUserId": "c8813529-c538-4548-977e-4c8833ed3d8e",
+	"applicant": "王冠西",
+	"contact": "",
+	"email": "gxwang@admin.ecnu.edu.cn",
+	"priceAmountResult": "{\"totalPackagePrice\":\"260\",\"payType\":\"Subscription\",\"lease\":\"1\",\"status\":\"ok\",\"unit\":null,\"usages\":[],\"packages\":[]}"
+}
